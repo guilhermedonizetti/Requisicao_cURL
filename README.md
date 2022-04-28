@@ -3,9 +3,11 @@
 
 O cURL é uma ferramenta que pode ser usada para fazer requisições e buscar conteúdo de outro servidor. Neste repositório, o comando foi usado para consultar uma API para obter o nome de todas as cidades de um estado qualquer. Assim, se esse exemplo fosse aplicado em um formulário de cadastro, o usuário não precisaria digitar o nome de sua cidade, e o desenvolvedor não precisaria ter o nome de todas elas para criar um select dinamicamente.
 
+<!--
 <p align="center">
-<img href="https://github.com/guilhermedonizetti/Requisicao_cURL/blob/master/images/imagem1.png" width="350" height="300">
+<img href="https://github.com/guilhermedonizetti/Requisicao_cURL/blob/master/images/imagem1.png" alt="" width="350" height="300">
 </p>
+-->
 
 <b>Requisição:</b> quando o usuário seleciona um estado, o JQuery identifica um "change" no select de estados e com isso executa:<br><br>
 👉 Pega o value do select de estado<br>
