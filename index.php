@@ -19,7 +19,7 @@
             <div class="card-body">
                 <h5 class="card-title">Selecione um estado:</h5>
                 <select class="form-select" id="slcEstado">
-                    <option>Selecione</option>
+                    <option value="">Selecione</option>
                     <option value="SP">São Paulo</option>
                     <option value="RJ">Rio de Janeiro</option>
                     <option value="MG">Minas Gerais</option>
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="card-footer text-muted">
-                Visite o GitHub: <a href="https://github.com/guilhermedonizetti/" target="_blank">Requisicoes_PHP</a> 
+                Visite o GitHub: <a href="https://github.com/guilhermedonizetti/Requisicao_cURL" target="_blank">Requisicoes_PHP</a> 
             </div>
         </div>
     </div>
@@ -48,14 +48,15 @@
             if (estado == "") {
                 $("#areaCidade_filho").remove()
             }
-
-            $.ajax({
-                url: url_requisicao,
-                type: 'GET'
-            }).done(function(data){
-                $("#areaCidade_filho").remove()
-                document.getElementById('areaCidade_pai').innerHTML = data
-            })
+            else {
+                $.ajax({
+                    url: url_requisicao,
+                    type: 'GET'
+                }).done(function(data){
+                    $("#areaCidade_filho").remove()
+                    document.getElementById('areaCidade_pai').innerHTML = data
+                })
+            }
         });
 
     </script>
